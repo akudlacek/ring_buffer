@@ -49,7 +49,7 @@ static inline void set_peak_usage(ring_buffer_t * const ring_buffer, const uint1
 *
 *  \note Must initialize the struct before using ring buffer put and get
 ******************************************************************************/
-void ring_buffer_init(ring_buffer_t * const ring_buffer, volatile uint8_t * const buffer_array, const uint16_t buffer_array_size)
+void ring_buffer_init(ring_buffer_t * const ring_buffer, uint8_t * const buffer_array, const uint16_t buffer_array_size)
 {
 	ring_buffer->rb_state = BUFFER_EMPTY;
 	ring_buffer->rb_buffer_array = buffer_array;
